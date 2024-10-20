@@ -1,6 +1,6 @@
 # Rails Guide
 
-## [Active Record](https://guides.rubyonrails.org/active_record_basics.html#what-is-active-record-questionmark)
+## [Active Record Basics](https://guides.rubyonrails.org/active_record_basics.html#what-is-active-record-questionmark)
 
 The Active Record pattern is described by Martin Fowler in the book Patterns of Enterprise Application Architecture as "an object that wraps a row in a database table, encapsulates the database access, and adds domain logic to that data." 
 **Active Record objects carry both data and behavior.** Active Record classes match very closely to the record structure of the underlying database. This way users can easily read from and write to the database, as you will see in the examples below.
