@@ -1,0 +1,21 @@
+<body>
+    <div class="h-[calc(100vh-40px)] w-screen grid grid-cols-12">
+      <%= render "conversations/history", conversations: @conversations %>
+      <div class="col-span-9 overflow-x-hidden">
+        <%= render "layouts/nav" %>
+        <%= turbo_frame_tag "thread" do %>
+        <div class="flex flex-col h-full">
+          <div class=" overflow-auto h-[calc(100vh-160px)] grow scroll-container">           
+            <%= yield %>
+          </div>
+          <button id="scroll-button"class="text-left bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            leatest
+          </button>
+          <div class="shrink mb-10">
+            <%= render "questions/form", question: @question, conversation: @conversation, directory_id: @directory_id %>
+          </div>
+        </div> 
+        <% end %> 
+      </div>
+    </div>
+  </body>
