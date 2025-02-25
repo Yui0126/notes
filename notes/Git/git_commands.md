@@ -48,3 +48,20 @@ then push the changes into your remote branchname if necessary.
 ```
 git push
 ```
+
+### Delete untracked files
+
+To check which files will be deleted,
+```
+git clean -n
+```
+If you are happy with the files that will be deleted,
+```
+git clean -f
+```
+
+The above line will only delete files. If you want to delete directories, use the following.
+
+```
+git clean -fd
+```
